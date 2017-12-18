@@ -1,0 +1,63 @@
+section{
+    width:100%;
+    margin:0;
+}
+
+
+/*Para que el contenedor muestre elementos aunque estos sean flotantes*/
+
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+/*Estructura de cada componente de la galeria (imagen + descripcion)*/
+.container div{
+    width: 30%;
+    height: auto;
+    -webkit-transition: -webkit-transform 1s;
+    display:inline;
+
+    margin:0px 3% 0 0;
+    padding: 10px;
+}
+.container div img{
+    width: 250px;
+    height: 340px;
+    
+ 
+}
+
+
+
+/*Se especifica el comportamiento que tendran las imagenes al posicionar el cursor encima del contenedor*/
+.container:hover div{
+    opacity: 0.2;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+/*Se especifica el comportamiento que tendran la imagen seleccionada*/
+.container:hover div:hover{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*Media query de ejemplo para pantallas de alta resolucion
+  pero pueden haber mas, este media query permite mostrar hasta 5 imagenes por filas
+
+@media (max-width:1600px){
+    .container div{
+        width: 50%;
+    }
+}
+*/
+@media (max-width:1600px) {
+    .container div {
+        width: 100%;
+    }
+}

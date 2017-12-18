@@ -1,0 +1,76 @@
+@import url("menu.css");
+@import url("tablanimes.css");
+
+
+main{
+    position: relative;
+    top: 0px; 
+
+}
+.content-one{
+    width: 105%;
+}
+.content-portada{
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagen/fondo3.jpg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:2000px){
+    .content-portada{
+        background-size: 1800px;
+    }
+
+}
+.content-item1{
+    width: 1000px;
+    margin: 60px;
+    text-align: left;
+    position: relative;
+    top: 30px;
+ 
+}
+.content-item1 h4{
+    color:white;
+    font-size: 60px;
+    font-weight: 100;
+}
+.content-item1 h2{
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+
+}
+@media screen and (max-width:800px){
+    .content-item1{
+        width: 100%;
+        margin: auto;
+        top:80px;
+    }
+}
+
+/* content two*/
+
+.content-details{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.content-item2{
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.icon-thumbs-up-alt, .icon-home-outline, .icon-star-empty{
+    color: #830707;
+    font-size: 40px;
+}
+
